@@ -61,11 +61,11 @@ Put together, the opening tag + content + closing tag is called an **element**.
 
 ```text
    <p>This is a paragraph.</p>
-   ↑ ↑              ↑     ↑
-   │ │              │     │
-   │ └ opening tag  │     └ closing tag (note the slash)
-   │                │
-   │                └ the content
+   ↑  ↑               ↑    ↑
+   │  │               │    │
+   │  └ opening tag   │    └ closing tag (note the slash)
+   │                  │
+   │                  └ the content
    │
    └ the < symbol that opens every tag
 ```

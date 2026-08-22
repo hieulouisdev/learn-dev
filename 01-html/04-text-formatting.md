@@ -61,8 +61,8 @@ The word "Warning:" will render in bold. Use `<strong>` for warnings, important 
 
 The word "really" will render in italic. Use `<em>` when the emphasis changes the meaning of the sentence. Compare:
 
-- "I really need you to read this." (emphasis on the urgency)
-- "I really need you to read this." (without emphasis, just a normal sentence)
+- "I *really* need you to read this." (emphasis on "really" — sounds urgent, like you are pleading)
+- "I really need you to read *this*." (emphasis on "this" — sounds like you are pointing at a specific thing)
 
 ### 2.3. `<mark>` — Highlighted Text
 

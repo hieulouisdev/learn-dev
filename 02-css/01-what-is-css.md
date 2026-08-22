@@ -82,7 +82,7 @@ The browser doesn't care about formatting — this is also valid:
 p { color: navy; font-size: 18px; line-height: 1.6; }
 ```
 
-But humans care. Always format for readability. Two declarations per line is too crowded.
+But humans care. Always format for readability. Putting multiple declarations on one line is too crowded.
 
 ### The Semicolon Rule
 

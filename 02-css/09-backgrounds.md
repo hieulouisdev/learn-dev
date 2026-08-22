@@ -427,7 +427,7 @@ body {
 .hero {
   background:
     linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)),
-    url("https://images.unsplash.com/photo-1503264116259-4 trash.jpg") center / cover;
+    url("https://images.unsplash.com/photo-1503264116259-4a1f8e8d8c1e") center / cover;
   /* Replace the URL above with any image */
   background:
     linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)),
@@ -588,7 +588,7 @@ For hero images where part of the image must be visible, `cover` may crop import
 
 ```css
 .hero {
-  background: url("hero.jpg) center top / cover no-repeat;
+  background: url("hero.jpg") center top / cover no-repeat;
 }
 ```
 

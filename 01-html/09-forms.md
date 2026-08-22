@@ -157,7 +157,7 @@ A box that can be checked or unchecked. Use `checked` to start checked:
 <input type="checkbox" name="subscribe" value="yes" checked>
 ```
 
-Multiple checkboxes with the same `name` and an array-style `name="subscribe[]"` allow multiple selections.
+Multiple checkboxes use an array-style name (e.g. `name="subscribe[]"`) so the browser submits all selected values as a list. If several checkboxes share a plain `name="subscribe"` without the `[]`, only the last checked value reaches the server.
 
 ### 3.10. Radio Buttons
 

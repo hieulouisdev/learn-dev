@@ -146,9 +146,9 @@ font: italic 700 16px/1.5 "Inter", sans-serif;
 
 ```
 ┌───────────────────┐
-│      margin        │
+│      margin       │
 │  ┌──────────────┐ │
-│  │   border      │ │
+│  │   border     │ │
 │  │ ┌──────────┐ │ │
 │  │ │ padding  │ │ │
 │  │ │  ┌────┐  │ │ │

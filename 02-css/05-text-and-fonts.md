@@ -166,7 +166,7 @@ Values:
 
 - Unitless number (recommended) — multiplier of font size. `1.5` means line height is 1.5× the font size.
 - `px` — absolute line height. Less flexible.
-- `%` — like a unitless number. `150%` = `1.5`.
+- `%` — like a unitless number for the element's own line height, but the computed absolute value is inherited. `150%` = `1.5` for the element itself, but children inherit the resolved pixel value, not the multiplier. Prefer the unitless form to avoid compounding issues in nested elements.
 
 ### Recommended Line Heights
 

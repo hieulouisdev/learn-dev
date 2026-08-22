@@ -394,7 +394,7 @@ These are deprecated and should never appear in modern code.
         <h2>About Me</h2>
         <p>
           Hi! I'm <strong>Hieu</strong>, a self-taught web developer
-          based in <time datetime="2026">Vietnam</time> since 2026.
+          based in Vietnam since <time datetime="2026">2026</time>.
           I love building clean, accessible websites.
         </p>
 

@@ -472,20 +472,20 @@ Example: to display `<p>` as text in HTML, write `&lt;p&gt;`.
 
 ---
 
-## 18. The 10 Tags You Will Use Most
+## 18. The 10 Most-Used Tag Groups
 
-If you could only learn 10 HTML tags, learn these. They appear on virtually every page:
+If you could only learn 10 tag groups, learn these. They appear on virtually every page. Several groups bundle related tags that you will almost always use together, so we count the group, not each individual tag:
 
-1. `<html>`, `<head>`, `<body>` — the skeleton
-2. `<p>` — paragraphs
-3. `<h1>`–`<h3>` — headings
+1. `<html>`, `<head>`, `<body>` — the document skeleton (always together)
+2. `<p>` — paragraphs of text
+3. `<h1>`–`<h3>` — headings (one family of related tags)
 4. `<a>` — links
 5. `<img>` — images
-6. `<ul>` / `<ol>` / `<li>` — lists
+6. `<ul>`, `<ol>`, `<li>` — lists (parent + items, always together)
 7. `<div>` — generic block container
 8. `<span>` — generic inline container
-9. `<form>` + `<input>` — forms
-10. `<header>`, `<main>`, `<footer>` — semantic structure
+9. `<form>`, `<input>` — forms (input never lives outside a form)
+10. `<header>`, `<main>`, `<footer>` — semantic structure (always together)
 
 Master these, and you can build 90% of the structure of any web page you can imagine.
 

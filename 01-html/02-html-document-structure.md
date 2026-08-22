@@ -89,7 +89,7 @@ The `<head>` element contains **metadata** — information about the page that i
 <meta charset="UTF-8">
 ```
 
-This tells the browser which character encoding to use. UTF-8 supports every character in every language — English, Vietnamese, Chinese, Arabic, emoji, mathematical symbols. Without this line, your browser might misinterpret accented characters and show "garbage text" like `â€™` instead of `'`.
+This tells the browser which character encoding to use. UTF-8 supports every character in every language — English, Vietnamese, Chinese, Arabic, emoji, mathematical symbols. Without this line, your browser might misinterpret accented characters and show "garbage text" like `â€™` instead of `'` (a right single quotation mark).
 
 Best practice: **always include this line, and put it first** inside `<head>`. The browser needs to know the encoding before it reads anything else.
 

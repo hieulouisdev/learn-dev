@@ -39,7 +39,7 @@ This module contains 13 lessons. Each lesson is a separate Markdown file in this
 | 07 | [Lists](./07-lists.md) | Ordered and unordered lists. |
 | 08 | [Tables](./08-tables.md) | Displaying tabular data with rows and columns. |
 | 09 | [Forms](./09-forms.md) | Collecting user input with text fields, radios, checkboxes. |
-| 10 | `<div>` and `<span>` | The two generic containers every developer uses. |
+| 10 | [`<div>` and `<span>`](./10-div-and-span.md) | The two generic containers every developer uses. |
 | 11 | [Semantic HTML](./11-semantic-html.md) | Meaningful tags like `<header>`, `<nav>`, `<article>`, `<footer>`. |
 | 12 | [Comments](./12-comments.md) | Writing notes to yourself inside HTML that the browser ignores. |
 | 13 | [HTML Cheatsheet](./13-html-cheatsheet.md) | A printable one-page summary of every tag you learned. |

@@ -38,12 +38,12 @@ You should read the lessons in order the first time, because later lessons build
 
 ### The Roadmap
 
-Here is the full roadmap of this curriculum. Modules marked with a checkmark are already written and ready to study. Modules marked as "in progress" are being written right now. Modules marked as "coming soon" will be published in upcoming updates.
+Here is the full roadmap of this curriculum. Modules marked with "Done" are already written and ready to study. Modules marked as "In Progress" are being written right now. Modules marked as "Coming Soon" will be published in upcoming updates.
 
 | #   | Module | Description | Status |
 |-----|--------|-------------|--------|
-| 01 | [HTML](./01-html/) | The skeleton of every website. Learn how to structure content with tags, headings, paragraphs, links, images, lists, tables, forms, and more. | In Progress |
-| 02 | [CSS](./02-css/) | The style of every website. Learn how to add colors, fonts, spacing, layouts, animations, and make a page look beautiful. | In Progress |
+| 01 | [HTML](./01-html/) | The skeleton of every website. Learn how to structure content with tags, headings, paragraphs, links, images, lists, tables, forms, and more. | Done |
+| 02 | [CSS](./02-css/) | The style of every website. Learn how to add colors, fonts, spacing, layouts, animations, and make a page look beautiful. | Done |
 | 03 | JavaScript | The behavior of every website. Learn variables, functions, conditions, loops, arrays, objects, and how to make pages interactive. | Coming Soon |
 | 04 | Git & GitHub | Version control. Learn how to track changes, collaborate with others, and contribute to open source. | Coming Soon |
 | 05 | The Command Line | The terminal. Learn how to navigate folders, move files, and use the keyboard like a real developer. | Coming Soon |
@@ -54,6 +54,14 @@ Here is the full roadmap of this curriculum. Modules marked with a checkmark are
 | 10 | Databases | Storing data. Learn SQL, relational databases, and how to connect them to a backend. | Coming Soon |
 | 11 | Frameworks | React, Next.js, or Vue. Build modern, component-based web applications. | Coming Soon |
 | 12 | Career Readiness | Resume, portfolio, interviews, and how to land your first job. | Coming Soon |
+| 13 | [Python](./13-python/) | The most beginner-friendly general-purpose language. Learn variables, control flow, functions, lists, dicts, and write real scripts. | Done |
+| 14 | [Rust](./14-rust/) | A modern systems language with memory safety and zero-cost abstractions. Learn ownership, borrowing, and fearless concurrency. | Done |
+| 15 | [Go](./15-go/) | A simple, fast backend language from Google. Learn goroutines, channels, structs, interfaces, and ship servers quickly. | Done |
+| 16 | [TypeScript](./16-typescript/) | JavaScript with types. Learn basic types, interfaces, generics, unions, and catch bugs before runtime. | Done |
+| 17 | [Java](./17-java/) | The enterprise classic. Learn classes, methods, packages, the JVM, and how to write robust object-oriented programs. | Done |
+| 18 | [C++](./18-cpp/) | The performance powerhouse. Learn pointers, references, manual memory, and how the machine really works. | Done |
+| 19 | [Kotlin](./19-kotlin/) | The modern JVM language. Learn null safety, data classes, coroutines, and build Android-ready code. | Done |
+| 20 | [Swift](./20-swift/) | Apple's modern language. Learn optionals, value types, protocols, and build iOS and macOS apps. | Done |
 
 ### How to Use This Repository
 
@@ -80,40 +88,19 @@ If a concept does not make sense, do not skip it. Read it again. Try the example
 learn-dev/
 ├── README.md              <-- You are here
 ├── logorepo.png           <-- Logo of this repository
-├── 01-html/               <-- HTML module
-│   ├── README.md          <-- Module overview & lesson index
-│   ├── 01-what-is-html.md
-│   ├── 02-html-document-structure.md
-│   ├── 03-headings-and-paragraphs.md
-│   ├── 04-text-formatting.md
-│   ├── 05-links.md
-│   ├── 06-images.md
-│   ├── 07-lists.md
-│   ├── 08-tables.md
-│   ├── 09-forms.md
-│   ├── 10-div-and-span.md
-│   ├── 11-semantic-html.md
-│   ├── 12-comments.md
-│   └── 13-html-cheatsheet.md
-└── 02-css/                <-- CSS module
-    ├── README.md          <-- Module overview & lesson index
-    ├── 01-what-is-css.md
-    ├── 02-how-to-add-css.md
-    ├── 03-selectors.md
-    ├── 04-colors.md
-    ├── 05-text-and-fonts.md
-    ├── 06-the-box-model.md
-    ├── 07-margin-and-padding.md
-    ├── 08-borders.md
-    ├── 09-backgrounds.md
-    ├── 10-display-property.md
-    ├── 11-position.md
-    ├── 12-flexbox.md
-    ├── 13-grid.md
-    ├── 14-responsive-design.md
-    ├── 15-transitions-and-animations.md
-    └── 16-css-cheatsheet.md
+├── 01-html/               <-- HTML module (web structure)
+├── 02-css/                <-- CSS module (web styling)
+├── 13-python/             <-- Python module (general-purpose scripting)
+├── 14-rust/               <-- Rust module (systems + memory safety)
+├── 15-go/                 <-- Go module (simple backend + concurrency)
+├── 16-typescript/         <-- TypeScript module (typed JavaScript)
+├── 17-java/               <-- Java module (JVM + enterprise OOP)
+├── 18-cpp/                <-- C++ module (performance + low-level)
+├── 19-kotlin/             <-- Kotlin module (modern JVM + Android)
+└── 20-swift/              <-- Swift module (Apple ecosystem)
 ```
+
+Each module folder has its own `README.md` listing every lesson inside it. Open any module's `README.md` to see the lesson index for that language.
 
 ### Contributing & Feedback
 

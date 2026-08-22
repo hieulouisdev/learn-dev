@@ -241,7 +241,7 @@ This is the kind of structure you'll write every day as a web developer.
 
 ## 6. The Inline-Block Hybrid
 
-Some elements are neither pure block nor pure inline — they are **inline-block**. Examples: `<img>`, `<input>`, `<button>`. They flow inline but accept width/height like blocks.
+Some elements are neither pure block nor pure inline — they are **inline-block**. Examples: `<input>`, `<button>`. They flow inline but accept width/height like blocks. The `<img>` element is technically `display: inline` by default (a "replaced" element), but it behaves like `inline-block` because it accepts width and height — we will clarify this in the CSS module.
 
 You can also make any element `inline-block` with CSS:
 

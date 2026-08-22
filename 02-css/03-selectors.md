@@ -307,13 +307,13 @@ Pseudo-elements target parts of an element, not the whole element. Use a double 
 
 ```css
 .quote::before {
-  content: """;
+  content: "\201C";  /* opening curly quote " */
   font-size: 2em;
   color: gray;
 }
 
 .quote::after {
-  content: """;
+  content: "\201D";  /* closing curly quote " */
   font-size: 2em;
   color: gray;
 }
@@ -358,32 +358,33 @@ Styles the part of the page the user has highlighted with their mouse.
 
 ## 6. CSS Specificity — The Cascade Conflict Resolver
 
-When two rules apply to the same element and set the same property, the browser uses **specificity** to decide the winner. Specificity is a 4-number score:
+When two rules apply to the same element and set the same property, the browser uses **specificity** to decide the winner. Specificity is a 3-number score (one slot per kind of selector):
 
 ```
-A, B, C, D
+A, B, C
 ```
 
-- **A** = number of `!important` declarations (rare, we'll skip)
-- **B** = number of ID selectors (`#main-nav`)
-- **C** = number of class selectors, attribute selectors, and pseudo-classes (`.card`, `[type="text"]`, `:hover`)
-- **D** = number of type selectors and pseudo-elements (`p`, `h1`, `::before`)
+- **A** = number of ID selectors (`#main-nav`)
+- **B** = number of class selectors, attribute selectors, and pseudo-classes (`.card`, `[type="text"]`, `:hover`)
+- **C** = number of type selectors and pseudo-elements (`p`, `h1`, `::before`)
 
 The universal selector `*` and combinators (`,`, ` `, `>`, `+`, `~`) have **zero** specificity.
 
+> **Note on `!important` and inline styles.** These are *not* part of specificity — they are separate cascade overrides that beat any selector. Inline styles (`style="..."`) win over every selector except `!important`, and `!important` wins over everything else. Use them sparingly: they make CSS harder to maintain because they cannot be overridden by more specific selectors.
+
 ### Calculating Specificity
 
-| Selector | B (IDs) | C (classes/attr/pseudo) | D (types) | Score |
+| Selector | A (IDs) | B (classes/attr/pseudo) | C (types) | Score |
 |----------|---------|--------------------------|-----------|-------|
-| `*` | 0 | 0 | 0 | 0,0,0,0 |
-| `p` | 0 | 0 | 1 | 0,0,0,1 |
-| `p::before` | 0 | 0 | 2 | 0,0,0,2 |
-| `.card` | 0 | 1 | 0 | 0,0,1,0 |
-| `p.card` | 0 | 1 | 1 | 0,0,1,1 |
-| `#main` | 1 | 0 | 0 | 0,1,0,0 |
-| `div.card.featured` | 0 | 2 | 1 | 0,0,2,1 |
-| `#main .card` | 1 | 1 | 0 | 0,1,1,0 |
-| `nav#main .item:hover` | 1 | 2 | 1 | 0,1,2,1 |
+| `*` | 0 | 0 | 0 | 0,0,0 |
+| `p` | 0 | 0 | 1 | 0,0,1 |
+| `p::before` | 0 | 0 | 2 | 0,0,2 |
+| `.card` | 0 | 1 | 0 | 0,1,0 |
+| `p.card` | 0 | 1 | 1 | 0,1,1 |
+| `#main` | 1 | 0 | 0 | 1,0,0 |
+| `div.card.featured` | 0 | 2 | 1 | 0,2,1 |
+| `#main .card` | 1 | 1 | 0 | 1,1,0 |
+| `nav#main .item:hover` | 1 | 2 | 1 | 1,2,1 |
 
 Higher score wins. ID selectors (`#main`) beat class selectors (`.card`), which beat type selectors (`p`).
 

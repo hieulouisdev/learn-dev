@@ -408,7 +408,6 @@ h1, h2 { color: #2c3e50; }
 
 .nav ul {
   list-style: none;
-  padding: 0;
   background: #2c3e50;
   padding: 10px;
 }
